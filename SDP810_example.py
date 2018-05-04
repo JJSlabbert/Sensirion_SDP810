@@ -49,7 +49,7 @@ for x in range (0, 5):
     print("Diffirential Pressure: "+str(diffirential_pressure)+" PA")
 
 #We will now take 5 Temperature readings
-print("We will now take 5 Temperature readings, Play around, increase the number of readings, blow a fan throught the pipes")
+print("We will now take 5 Temperature readings, Play around, increase the number of readings, Blow a hair dryer on it.")
 for x in range (0, 5):    
     time.sleep(2)
     reading=bus.read_i2c_block_data(address,0,9)
