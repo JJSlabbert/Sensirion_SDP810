@@ -1,7 +1,7 @@
 #Reading the Sensirion SDP810 125PA (or 500PA will need modification) sensor
 #Dev by JJ Slabbert
 #Code tested with Python 2.7
-#Run sudo i2cdetect -y 1 in the therminal, to see if the sensor is connected. it will show address 25
+#Run sudo i2cdetect -y 1 in the terminal, to see if the sensor is connected. it will show address 25
 #Check the datasheet at https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/0_Datasheets/Differential_Pressure/Sensirion_Differential_Pressure_Sensors_SDP8xx_Digital_Datasheet.pdf
 #The sensor i2c address is 0x25 (Not user Programable).
 #I have no formal electronics, physics or programing education, code should be tested before critical applications
