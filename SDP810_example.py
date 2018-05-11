@@ -11,7 +11,7 @@ import time
 
 bus=smbus.SMBus(1) #The default i2c bus
 address=0x25
-bus.write_i2c_block_data(0x25, 0x3F, [0xF9]) #Stop any cont measurement of the sensor
+bus.write_i2c_block_data(address, 0x3F, [0xF9]) #Stop any cont measurement of the sensor
 time.sleep(0.8)
 
 #Start Continuous Measurement (5.3.1 in Data sheet)
