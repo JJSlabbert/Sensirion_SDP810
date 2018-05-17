@@ -23,10 +23,11 @@ print ("(Start Continuous Measurement (5.3.1 in Data sheet)")
 ##0x3615                    Differential pressure               Average till read
 ##0x361E                    Differential pressure None          Update rate 0.5ms
 
-# We will use command code 0x3615
-#the smbus write_i2c_block_data function have 3 arguments, addr=the i2c address, cmd and [val]. cmd and val is derived from the Command code in Hex
+# We will use command code 0x3603 (Mass flow, Average  till read)
+#the smbus write_i2c_block_data function have 3 arguments, addr=the i2c address, cmd and [val]. cmd and val is derived from the 
+#Command code in Hex
 #We will take 5 readings now
-bus.write_i2c_block_data(address, 0x36, [0X03])
+bus.write_i2c_block_data(address, 0x36, [0X03]) # The command code 0x3603 is split into two arguments, cmd=0x36 and [val]=0x03
 print ("Taking 5 readings of 9 bites each. See table in section 5.3.1 of datasheet for meaning of each bite")
 for x in range (0, 5):    
     time.sleep(2)
@@ -35,7 +36,8 @@ for x in range (0, 5):
 
 
 #We will now take 5 Diffirential Presure readings
-print("We will now take 5 Diffirential Pressure readings, Play around, increase the number of readings, blow a fan on throught the pipes")
+print("We will now take 5 Diffirential Pressure readings, Play around, increase the number of readings, \nblow a fan on one of 
+      the pipes")
 for x in range (0, 5):    
     time.sleep(2)
     reading=bus.read_i2c_block_data(address,0,9)
