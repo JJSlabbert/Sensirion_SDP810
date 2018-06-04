@@ -40,4 +40,4 @@ while True:
         diffirential_pressure4=-(256-pressure_value4)*scale_factor #scale factor adjustment
     elif pressure_value4==128:
         diffirential_pressure4=99999999 #Out of range
-    print("Diffirential Pressure 4: "+str(diffirential_pressure4)+" PA"+"\n")
+    print("Diffirential Pressure 4: "+str(diffirential_pressure4)+" PA "+"\n")
