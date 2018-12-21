@@ -1,5 +1,5 @@
 #IMPORTANT: Add the following 2 lines to /boot/config.txt to generate aditional i2c busses 3 and 4
-#dtoverlay=i2c-gpio,bus=3,i2c_gpio_delay_us=1
+#dtoverlay=i2c-gpio,bus=3,i2c_gpio_delay_us=1,i2c_gpio_sda=23,i2c_gpio_scl=24
 #dtoverlay=i2c-gpio,bus=4,i2c_gpio_delay_us=1,i2c_gpio_sda=17,i2c_gpio_scl=27
 #Code should be compatable with sdp810, sdp800 sdp811 and sdp801
 #Dev by JJ Slabbert
