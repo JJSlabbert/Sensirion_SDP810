@@ -5,7 +5,7 @@
 #Check the datasheet at https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/0_Datasheets/Differential_Pressure/Sensirion_Differential_Pressure_Sensors_SDP8xx_Digital_Datasheet.pdf
 #The sensor i2c address is 0x25 (Not user Programable).
 #I have no formal electronics, physics or programing education, code should be tested before critical applications
-
+#Code should be compatable with sdp810, sdp800 sdp811 and sdp801
 import smbus
 import time
 
