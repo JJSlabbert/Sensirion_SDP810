@@ -4,5 +4,5 @@ This code is using the smbus module available in python. No aditional modules ne
 2-x-sdp810.py Can read multiple SDP810 devices on the same raspberry pi.
 
 https://youtu.be/bEtrt1HFLU0
-2-x-sdp810.py2-x-sdp810.py
+2-x-sdp810.py2-x-sdp810.py.
 Code should be compatable with sdp810, sdp800 sdp811 and sdp801
